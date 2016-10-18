@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MMViewController.h
 //  YJCustom
 //
 //  Created by EEKA on 16/9/19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MMViewController : UIViewController
 
 @end
-

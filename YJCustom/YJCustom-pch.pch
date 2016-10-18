@@ -1,0 +1,26 @@
+//
+//  YJCustom-pch.pch
+//  YJCustom
+//
+//  Created by EEKA on 16/9/22.
+//  Copyright © 2016年 EEKA. All rights reserved.
+//
+
+#ifndef YJCustom_pch_pch
+#define YJCustom_pch_pch
+
+#import "MFNetwork.h"
+#import "MMBaseClass.h"
+#import "MFCategorys.h"
+
+#import "MFModelHelper.h"
+#import "MMServiceCenter.h"
+#import "YJAccountMgr.h"
+
+#import "MFUICommonUtil.h"
+#import "SVPullToRefresh.h"
+#import "HexColors.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+
+#endif /* YJCustom_pch_pch */

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  YJCustomAppDelegate.h
 //  YJCustom
 //
 //  Created by EEKA on 16/9/19.
@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface YJCustomAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
-

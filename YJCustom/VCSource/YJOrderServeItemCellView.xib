@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YJOrderServeItemCellView">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6G-bo-cir">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fds-pd-vl5">
+                            <color key="backgroundColor" red="0.55851678309999997" green="1" blue="0.57297788869999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="6AP-FP-DHf"/>
+                                <constraint firstAttribute="width" constant="115" id="V3X-QU-aNy"/>
+                            </constraints>
+                            <state key="normal" title="添加量体信息">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickAddServeDetail:" destination="iN0-l3-epB" eventType="touchUpInside" id="9s0-f7-qcf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Fds-pd-vl5" firstAttribute="centerX" secondItem="b6G-bo-cir" secondAttribute="centerX" id="65T-BW-STh"/>
+                        <constraint firstItem="Fds-pd-vl5" firstAttribute="centerY" secondItem="b6G-bo-cir" secondAttribute="centerY" id="bM8-4c-yIc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yw6-bg-KZR">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="服务项目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjq-k1-fBh">
+                            <frame key="frameInset" minX="8" minY="16" width="70" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="数值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBJ-xB-N1t">
+                            <frame key="frameInset" minX="8" minY="62" width="172" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb6-2s-CZp">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="haI-Ag-yNF"/>
+                                <constraint firstAttribute="width" constant="90" id="qpo-fE-eE7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" image="edit">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickUpdateServeDetail:" destination="iN0-l3-epB" eventType="touchUpInside" id="1ji-96-FxH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gb6-2s-CZp" secondAttribute="trailing" constant="8" id="9G6-la-S4o"/>
+                        <constraint firstItem="gb6-2s-CZp" firstAttribute="centerY" secondItem="yw6-bg-KZR" secondAttribute="centerY" constant="16" id="Xpy-NR-Ezi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b6G-bo-cir" secondAttribute="trailing" id="25q-Tu-rS1"/>
+                <constraint firstItem="b6G-bo-cir" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="60t-sN-rcS"/>
+                <constraint firstItem="yw6-bg-KZR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="J9h-zo-m1Q"/>
+                <constraint firstAttribute="bottom" secondItem="b6G-bo-cir" secondAttribute="bottom" id="Jui-x1-7KH"/>
+                <constraint firstItem="yw6-bg-KZR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qjv-SG-FxH"/>
+                <constraint firstAttribute="trailing" secondItem="yw6-bg-KZR" secondAttribute="trailing" id="X0d-q2-Lfr"/>
+                <constraint firstAttribute="bottom" secondItem="yw6-bg-KZR" secondAttribute="bottom" id="XoQ-Dr-GCl"/>
+                <constraint firstItem="b6G-bo-cir" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zsH-Qq-fck"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_addServeDetailView" destination="b6G-bo-cir" id="rod-s8-C1t"/>
+                <outlet property="_serveContentLabel" destination="aBJ-xB-N1t" id="cfF-e8-dDv"/>
+                <outlet property="_serveDetailView" destination="yw6-bg-KZR" id="FDG-BE-tG6"/>
+                <outlet property="_serveItemNameLabel" destination="gjq-k1-fBh" id="EEK-gs-pk2"/>
+            </connections>
+            <point key="canvasLocation" x="-14" y="-137"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="edit" width="17" height="17"/>
+    </resources>
+</document>

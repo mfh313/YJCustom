@@ -1,22 +1,58 @@
 //
-//  AppDelegate.m
+//  YJCustomAppDelegate.m
 //  YJCustom
 //
 //  Created by EEKA on 16/9/19.
 //  Copyright © 2016年 EEKA. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "YJCustomAppDelegate.h"
+#import "CAppViewControllerManager.h"
+#import "YJAccountLoginControlLogic.h"
+#import "YJAccountBaseViewController.h"
+#import "MMServiceCenter.h"
 
-@interface AppDelegate ()
+@interface YJCustomAppDelegate ()
+{
+    CAppViewControllerManager *m_appViewControllerMgr;
+    
+    YJAccountLoginControlLogic *m_loginLogic;
+    
+    MMServiceCenter *m_serviceCenter;
+}
 
 @end
 
-@implementation AppDelegate
 
+@implementation YJCustomAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSShadow *shadow = [[NSShadow alloc]init];
+    shadow.shadowColor = [UIColor clearColor];
+    NSDictionary *textAttributes = @{NSShadowAttributeName: shadow,NSForegroundColorAttributeName:[UIColor blackColor],NSFontAttributeName:[UIFont systemFontOfSize:18.0]};
+    [[UINavigationBar appearance] setTitleTextAttributes:textAttributes];
+    [[UINavigationBar appearance] setTintColor:YJCustomDefaultColor];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    [MFNetwork makeConfigNetwork];
+    
+    m_serviceCenter = [MMServiceCenter defaultCenter];
+    
+    m_appViewControllerMgr = [[CAppViewControllerManager getAppViewControllerManager] initWithWindow:self.window];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    YJAccountBaseViewController *loginVC = [storyboard instantiateViewControllerWithIdentifier:@"YJAccountBaseViewController"];
+    
+    m_loginLogic = [YJAccountLoginControlLogic new];
+    loginVC.m_delegate = m_loginLogic;
+    
+    self.window.rootViewController  = loginVC;
+    
+    
     return YES;
 }
 
