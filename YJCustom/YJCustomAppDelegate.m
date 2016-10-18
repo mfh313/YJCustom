@@ -40,6 +40,8 @@
     
     [MFNetwork makeConfigNetwork];
     
+    NSLog(@"test");
+    
     m_serviceCenter = [MMServiceCenter defaultCenter];
     
     m_appViewControllerMgr = [[CAppViewControllerManager getAppViewControllerManager] initWithWindow:self.window];
