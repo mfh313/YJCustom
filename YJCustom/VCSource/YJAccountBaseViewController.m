@@ -32,6 +32,7 @@
     [super viewDidLoad];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillChangeFrameNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     
 }
@@ -49,7 +50,7 @@
     
     if (CGRectGetMaxY(loginBtnFrameInSelf) > CGRectGetMinY(keyboardBounds))
     {
-        CGFloat y = CGRectGetMaxY(loginBtnFrameInSelf) - CGRectGetMinY(keyboardBounds);
+        CGFloat y = CGRectGetMaxY(loginBtnFrameInSelf) - CGRectGetMinY(keyboardBounds) + 10;
         
         [UIView beginAnimations:nil context:NULL];
         [UIView setAnimationDuration:[duration doubleValue]];
