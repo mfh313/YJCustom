@@ -14,5 +14,6 @@
 #import "MMUIView.h"
 #import "MMUIBridgeView.h"
 #import "MMNavigationController.h"
+#import "MMOnePixLayoutConstraint.h"
 
 #endif /* MMBaseClass_h */

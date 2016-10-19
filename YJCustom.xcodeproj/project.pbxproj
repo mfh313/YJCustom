@@ -105,6 +105,7 @@
 		AC808FE51D938E1100869E78 /* MMUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC808FE41D938E1100869E78 /* MMUIView.m */; };
 		AC808FE81D938E9900869E78 /* MMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC808FE71D938E9900869E78 /* MMTableViewCell.m */; };
 		AC808FEB1D93BCB900869E78 /* NSString+MMWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = AC808FEA1D93BCB900869E78 /* NSString+MMWidth.m */; };
+		AC821ABE1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AC821ABD1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m */; };
 		ACD51B391D8FC82A00814D89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD51B381D8FC82A00814D89 /* main.m */; };
 		ACD51B421D8FC82A00814D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD51B401D8FC82A00814D89 /* Main.storyboard */; };
 		ACD51B441D8FC82A00814D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD51B431D8FC82A00814D89 /* Assets.xcassets */; };
@@ -310,6 +311,8 @@
 		AC808FE71D938E9900869E78 /* MMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewCell.m; sourceTree = "<group>"; };
 		AC808FE91D93BCB900869E78 /* NSString+MMWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MMWidth.h"; sourceTree = "<group>"; };
 		AC808FEA1D93BCB900869E78 /* NSString+MMWidth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MMWidth.m"; sourceTree = "<group>"; };
+		AC821ABC1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMOnePixLayoutConstraint.h; sourceTree = "<group>"; };
+		AC821ABD1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMOnePixLayoutConstraint.m; sourceTree = "<group>"; };
 		ACD51B341D8FC82A00814D89 /* YJCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD51B381D8FC82A00814D89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACD51B411D8FC82A00814D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -430,6 +433,8 @@
 				AC534F8B1D94B3BE007B1862 /* MMUIBridgeView.m */,
 				AC808FE61D938E9900869E78 /* MMTableViewCell.h */,
 				AC808FE71D938E9900869E78 /* MMTableViewCell.m */,
+				AC821ABC1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.h */,
+				AC821ABD1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -885,6 +890,7 @@
 				AC137DCE1D927E1500075B1A /* MMViewController.m in Sources */,
 				AC808FD81D93783100869E78 /* YJAccountMgr.m in Sources */,
 				AC49BE9B1D9A519D00BD24B1 /* SDWebImageCompat.m in Sources */,
+				AC821ABE1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m in Sources */,
 				AC53D2841D9B57910010B9E3 /* YJGetAllServeItemListApi.m in Sources */,
 				AC53D28A1D9B5F530010B9E3 /* YJGetOrderServeDtlApi.m in Sources */,
 				AC137DB71D92664B00075B1A /* YTKBatchRequestAgent.m in Sources */,
