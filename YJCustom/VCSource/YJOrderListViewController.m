@@ -103,6 +103,9 @@
             [itemBtn setSelected:NO];
         }
     }
+    
+    YJOrderListContentBaseViewController *currentVC = (YJOrderListContentBaseViewController *)[self viewControlWithIndex:index];
+    [currentVC setTabBarBadgeValue];
 }
 
 -(void)initTableView
@@ -239,8 +242,6 @@
     [_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]
                       atScrollPosition:UITableViewScrollPositionMiddle animated:NO];
     
-    YJOrderListContentBaseViewController *currentVC = (YJOrderListContentBaseViewController *)[self viewControlWithIndex:index];
-    [currentVC setTabBarBadgeValue];
 }
 
 #pragma mark - YJOrderListMgrDelegate
