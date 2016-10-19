@@ -32,7 +32,7 @@
         
         YJLoginModel *loginModel = [YJLoginModel MM_modelWithJSON:request.responseJSONObject];
         
-        YJAccountMgr *accountMgr =[[MMServiceCenter defaultCenter] getService:[YJAccountMgr class]];
+        YJAccountMgr *accountMgr = [[MMServiceCenter defaultCenter] getService:[YJAccountMgr class]];
         accountMgr.token = loginModel.token;
         
         if(loginModel.token == nil)

@@ -95,6 +95,8 @@
         m_tabbarController.viewControllers = nil;
     }
     
+    [[MMServiceCenter defaultCenter] removeService:[YJAccountMgr class]];
+    
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     YJAccountBaseViewController *loginVC = [storyboard instantiateViewControllerWithIdentifier:@"YJAccountBaseViewController"];
     
