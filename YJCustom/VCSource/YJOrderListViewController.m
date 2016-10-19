@@ -16,6 +16,10 @@
 @interface YJOrderListViewController ()<UITableViewDataSource,UITableViewDelegate,YJOrderListContentBaseViewControllerDelegate,YJOrderListMgrDelegate>
 {
     UIScrollView *_headerView;
+    __weak IBOutlet MMSelectButton *_btnLeft;
+    __weak IBOutlet MMSelectButton *_btnMiddle;
+    __weak IBOutlet MMSelectButton *_btnRight;
+    
     UITableView *_tableView;  //横向tableView
     
     NSArray *_tabTitles;
@@ -47,7 +51,7 @@
     
     m_contentVCDic = [NSMutableDictionary dictionary];
     
-    [self initHeaderTabView];
+    [self setHeadBtns];
     [self initTableView];
     
     m_orderListMgr = [[MMServiceCenter defaultCenter] getService:[YJOrderListMgr class]];
@@ -57,34 +61,27 @@
 
 }
 
--(void)initHeaderTabView
+-(void)setHeadBtns
 {
-    _headerView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 20, CGRectGetWidth(self.view.bounds), 44)];
-    _headerView.showsVerticalScrollIndicator = NO;
-    _headerView.showsHorizontalScrollIndicator = NO;
-    _headerView.backgroundColor = MFRGB(243, 241, 241);
-    [self.view addSubview:_headerView];
+    NSArray *normalImages = @[MFImageStretch(MFImage(@"custom1"), 10, 25),
+                              MFImage(@"custom4"),
+                              MFImageStretch(MFImage(@"custom2"), 2, 25)];
+    NSArray *selectedImages = @[MFImageStretch(MFImage(@"custom5"), 10, 25),
+                              MFImage(@"custom3"),
+                              MFImageStretch(MFImage(@"custom6"), 2, 25)];
     
-    CGFloat leftMargin = 10;
-    CGFloat HSpace = 10;
+    [m_headTabViews addObject:_btnLeft];
+    [m_headTabViews addObject:_btnMiddle];
+    [m_headTabViews addObject:_btnRight];
     
-    for (int i = 0; i < _tabTitles.count; i++) {
-        UIButton *itemBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    for (int i = 0; i < m_headTabViews.count; i++) {
+        UIButton *itemBtn = m_headTabViews[i];
         [itemBtn setTitle:_tabTitles[i] forState:UIControlStateNormal];
-        [itemBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [itemBtn addTarget:self action:@selector(onClickItemBtn:) forControlEvents:UIControlEventTouchUpInside];
-        
-        NSString *title = _tabTitles[i];
-        CGFloat width = [title MMSizeWithFont:itemBtn.titleLabel.font maxSize:CGSizeMake(MAXFLOAT, MAXFLOAT)].width;
-        itemBtn.frame = CGRectMake(leftMargin, 0, width + HSpace, CGRectGetHeight(_headerView.bounds));
-        [_headerView addSubview:itemBtn];
-        
-        [m_headTabViews addObject:itemBtn];
-        
-        leftMargin = CGRectGetMaxX(itemBtn.frame) + HSpace;
+        [itemBtn setBackgroundImage:normalImages[i] forState:UIControlStateNormal];
+        [itemBtn setBackgroundImage:selectedImages[i] forState:UIControlStateSelected];
     }
-    
-    _headerView.contentSize = CGSizeMake(leftMargin, CGRectGetHeight(_headerView.bounds));
+
 }
 
 -(void)onClickItemBtn:(UIButton*)btn
@@ -100,20 +97,20 @@
     for (int i = 0; i < m_headTabViews.count; i++) {
         UIButton *itemBtn = m_headTabViews[i];
         if (i == index) {
-            [itemBtn setTitleColor:MFRGB(161, 122, 144) forState:UIControlStateNormal];
+            [itemBtn setSelected:YES];
         }
         else
         {
-            [itemBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            [itemBtn setSelected:NO];
         }
     }
 }
 
 -(void)initTableView
 {
-    CGRect tableFrame = CGRectMake(0, CGRectGetMaxY(_headerView.frame), CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.frame)-CGRectGetMaxY(_headerView.frame));
+    CGRect tableFrame = CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.frame)-64);
     
-    _tableView = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.backgroundColor = [UIColor whiteColor];
     _tableView.showsVerticalScrollIndicator = NO;
     _tableView.showsHorizontalScrollIndicator = NO;
@@ -127,8 +124,6 @@
     _tableView.frame = tableFrame;
     [_tableView setTransform:CGAffineTransformMake(0, -1, 1, 0, 0, 0)];
     _tableView.bounds = CGRectMake(0, 0, tableFrame.size.height, tableFrame.size.width);
-    
-    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
