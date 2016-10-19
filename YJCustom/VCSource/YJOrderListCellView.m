@@ -29,9 +29,14 @@
     [_prodImageView sd_setImageWithURL:[NSURL URLWithString:prodInfo.imageSmall]];
     _productNameLabel.text = prodInfo.prodName;
     
-    _orderPriceLabel.text = [NSString stringWithFormat:@"交易价格:¥%@",prodInfo.transPrice];;
+    NSString *priceString = [NSString stringWithFormat:@"交易金额：¥%@",prodInfo.transPrice];
+    NSMutableAttributedString *price = [[NSMutableAttributedString alloc] initWithString:priceString];
+    [price addAttribute:NSForegroundColorAttributeName value:[UIColor hx_colorWithHexString:@"f23a47"] range:(NSRange){5,prodInfo.transPrice.length+1}];
+    [price addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:19.0] range:(NSRange){5,prodInfo.transPrice.length+1}];
+    
+    _orderPriceLabel.attributedText = price;
     _orderNumLabel.text = [NSString stringWithFormat:@"订单号:%@",dataItem.orderNum];
-    _qtyLabel.text = [NSString stringWithFormat:@"数量:%ld",prodInfo.qty];
+    _qtyLabel.text = [NSString stringWithFormat:@"数量：%ld件",prodInfo.qty];
 }
 
 @end

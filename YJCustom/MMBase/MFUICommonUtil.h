@@ -22,3 +22,7 @@
 #define YJCustomDefaultColor [UIColor hx_colorWithHexString:@"e93871"]
 #define YJCustomLineColor [UIColor hx_colorWithHexString:@"d4d4d4"]
 #define YJCustomNavBarColor [UIColor hx_colorWithHexString:@"c1b497"]
+
+//282828 黑
+//686868 灰色
+//989898 浅灰色

@@ -137,7 +137,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 120;
+    return 130;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -152,6 +152,8 @@
         cell.m_subContentView = cellView;
     }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    
     YJOrderListDataItem *dataItem = _allOrderListArray[indexPath.row];
     YJOrderListCellView *cellView = (YJOrderListCellView *)cell.m_subContentView;
     [cellView setOrderDataItem:dataItem];
@@ -161,6 +163,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if ([self.m_delegate respondsToSelector:@selector(onClickOrderListAllIndex:)]) {
         [self.m_delegate onClickOrderListAllIndex:indexPath.row];
     }
