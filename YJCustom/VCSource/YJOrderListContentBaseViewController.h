@@ -24,4 +24,6 @@
 
 @property (nonatomic,weak) id<YJOrderListContentBaseViewControllerDelegate> m_delegate;
 
+-(void)setTabBarBadgeValue;
+
 @end

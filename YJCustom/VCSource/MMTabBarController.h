@@ -19,4 +19,6 @@
     NSUInteger _viewControllersCount;
 }
 
+- (void)setTabBarBadgeValue:(NSInteger)value forIndex:(NSInteger)index;
+
 @end

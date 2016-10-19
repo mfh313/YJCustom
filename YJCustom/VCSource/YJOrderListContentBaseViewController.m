@@ -24,6 +24,9 @@
 
 }
 
-
+-(void)setTabBarBadgeValue
+{
+    
+}
 
 @end

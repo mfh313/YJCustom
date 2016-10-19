@@ -8,16 +8,11 @@
 
 #import "YJCustomAppDelegate.h"
 #import "CAppViewControllerManager.h"
-#import "YJAccountLoginControlLogic.h"
-#import "YJAccountBaseViewController.h"
 #import "MMServiceCenter.h"
 
 @interface YJCustomAppDelegate ()
 {
     CAppViewControllerManager *m_appViewControllerMgr;
-    
-    YJAccountLoginControlLogic *m_loginLogic;
-    
     MMServiceCenter *m_serviceCenter;
 }
 
@@ -44,14 +39,7 @@
     
     m_appViewControllerMgr = [[CAppViewControllerManager getAppViewControllerManager] initWithWindow:self.window];
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    YJAccountBaseViewController *loginVC = [storyboard instantiateViewControllerWithIdentifier:@"YJAccountBaseViewController"];
-    
-    m_loginLogic = [YJAccountLoginControlLogic new];
-    loginVC.m_delegate = m_loginLogic;
-    
-    self.window.rootViewController  = loginVC;
-    
+    [[CAppViewControllerManager getAppViewControllerManager] jumpToLoginViewController];
     
     return YES;
 }

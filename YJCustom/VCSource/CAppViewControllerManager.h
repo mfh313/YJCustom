@@ -10,16 +10,21 @@
 #import "MMTabBarController.h"
 
 
-@interface CAppViewControllerManager : NSObject
+@interface CAppViewControllerManager : NSObject <UITabBarControllerDelegate>
 {
     UIWindow *m_window;
     
+    NSMutableArray *m_arrViewController;
+    NSMutableArray *m_arrTabBarBaseViewController;
     MMTabBarController *m_tabbarController;
 }
 
 -(id)initWithWindow:(UIWindow *)window;
 +(id)getAppViewControllerManager;
++(id)getTabBarController;
 
 -(void)createOrderListViewController;
+
+-(void)jumpToLoginViewController;
 
 @end

@@ -23,6 +23,12 @@
     return NO;
 }
 
+- (void)setTabBarBadgeValue:(NSInteger)value forIndex:(NSInteger)index
+{
+    UIViewController *indexVC = self.viewControllers[index];
+    indexVC.tabBarItem.badgeValue = [NSString stringWithFormat:@"%ld",value];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

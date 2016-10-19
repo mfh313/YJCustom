@@ -23,4 +23,7 @@
 #import "UIImageView+WebCache.h"
 #import "MBProgressHUD.h"
 
+
+#import "CAppViewControllerManager.h"
+
 #endif /* YJCustom_pch_pch */

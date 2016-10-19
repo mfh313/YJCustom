@@ -119,10 +119,18 @@
         [weakSelf onGetOrderListAll:_allOrderListArray];
         [weakSelf.tableView.pullToRefreshView stopAnimating];
         
+        [weakSelf setTabBarBadgeValue];
+        
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
         
         
     }];
+}
+
+-(void)setTabBarBadgeValue
+{
+    MMTabBarController *m_tabbarController = [CAppViewControllerManager getTabBarController];
+    [m_tabbarController setTabBarBadgeValue:_orderListItemMaxCount forIndex:0];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

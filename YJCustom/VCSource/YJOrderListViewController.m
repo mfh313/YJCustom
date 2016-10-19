@@ -14,8 +14,7 @@
 
 
 @interface YJOrderListViewController ()<UITableViewDataSource,UITableViewDelegate,YJOrderListContentBaseViewControllerDelegate,YJOrderListMgrDelegate>
-{
-    UIScrollView *_headerView;
+{;
     __weak IBOutlet MMSelectButton *_btnLeft;
     __weak IBOutlet MMSelectButton *_btnMiddle;
     __weak IBOutlet MMSelectButton *_btnRight;
@@ -210,18 +209,6 @@
     }
     else
     {
-//        NSArray *VCIdentifiers = @[@"YJOrderListAllViewController",
-//                                   @"YJOrderListReservedViewController",
-//                                   @"YJOrderListUntreatedViewController"];
-//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"OrderList" bundle:nil];
-//        viewController = [storyboard instantiateViewControllerWithIdentifier:VCIdentifiers[index]];
-//        viewController.m_delegate = self;
-//        m_contentVCDic[key] = viewController;
-//        
-//        [self addChildViewController:viewController];
-//        
-//        [viewController didMoveToParentViewController:self];
-        
         NSArray *VCIdentifiers = @[@"YJOrderListAllViewController",
                                    @"YJOrderListReservedViewController",
                                    @"YJOrderListUntreatedViewController"];
@@ -247,17 +234,16 @@
     return viewController;
 }
 
-
 -(void)setCurrentIndexVC:(NSInteger)index
 {
     [_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]
                       atScrollPosition:UITableViewScrollPositionMiddle animated:NO];
-
+    
+    YJOrderListContentBaseViewController *currentVC = (YJOrderListContentBaseViewController *)[self viewControlWithIndex:index];
+    [currentVC setTabBarBadgeValue];
 }
 
 #pragma mark - YJOrderListMgrDelegate
-
-
 #pragma mark - YJOrderListContentBaseViewControllerDelegate
 -(void)onClickOrderListAllIndex:(NSInteger)index
 {
@@ -272,6 +258,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"OrderList" bundle:nil];
     YJOrderListItemDetailViewController *detailVC = [storyboard instantiateViewControllerWithIdentifier:@"YJOrderListItemDetailViewController"];
     detailVC.dataItem = dataItem;
+    detailVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 

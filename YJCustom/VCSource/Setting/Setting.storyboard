@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting View Controller-->
+        <scene sceneID="AL6-k4-9i1">
+            <objects>
+                <viewController storyboardIdentifier="MMSettingViewController" id="z5L-cu-Imf" customClass="MMSettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XSx-vS-FHt"/>
+                        <viewControllerLayoutGuide type="bottom" id="2lf-Wa-0Oc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ajZ-K9-PuJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvj-7h-Wc6">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Vgt-8C-nW8"/>
+                                    <constraint firstAttribute="height" constant="44" id="kQk-qZ-BiH"/>
+                                </constraints>
+                                <state key="normal" title="退出登录" backgroundImage="btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickQuitLogin:" destination="z5L-cu-Imf" eventType="touchUpInside" id="yRc-jG-wvt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wvj-7h-Wc6" firstAttribute="centerX" secondItem="ajZ-K9-PuJ" secondAttribute="centerX" id="6LM-CZ-MZf"/>
+                            <constraint firstItem="2lf-Wa-0Oc" firstAttribute="top" secondItem="wvj-7h-Wc6" secondAttribute="bottom" constant="30" id="aye-xG-sop"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sN-fO-QYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="-45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn" width="200" height="44"/>
+    </resources>
+</document>

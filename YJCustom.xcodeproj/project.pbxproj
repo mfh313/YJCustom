@@ -107,6 +107,8 @@
 		AC808FEB1D93BCB900869E78 /* NSString+MMWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = AC808FEA1D93BCB900869E78 /* NSString+MMWidth.m */; };
 		AC821ABE1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AC821ABD1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m */; };
 		AC821AC11DB748AD00DD0A11 /* MMSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AC821AC01DB748AD00DD0A11 /* MMSelectButton.m */; };
+		AC821AC81DB75E9200DD0A11 /* MMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC821AC71DB75E9200DD0A11 /* MMSettingViewController.m */; };
+		AC821ACA1DB75EC200DD0A11 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC821AC91DB75EC200DD0A11 /* Setting.storyboard */; };
 		ACD51B391D8FC82A00814D89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD51B381D8FC82A00814D89 /* main.m */; };
 		ACD51B421D8FC82A00814D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD51B401D8FC82A00814D89 /* Main.storyboard */; };
 		ACD51B441D8FC82A00814D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD51B431D8FC82A00814D89 /* Assets.xcassets */; };
@@ -316,6 +318,9 @@
 		AC821ABD1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMOnePixLayoutConstraint.m; sourceTree = "<group>"; };
 		AC821ABF1DB748AD00DD0A11 /* MMSelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSelectButton.h; sourceTree = "<group>"; };
 		AC821AC01DB748AD00DD0A11 /* MMSelectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSelectButton.m; sourceTree = "<group>"; };
+		AC821AC61DB75E9200DD0A11 /* MMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSettingViewController.h; sourceTree = "<group>"; };
+		AC821AC71DB75E9200DD0A11 /* MMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSettingViewController.m; sourceTree = "<group>"; };
+		AC821AC91DB75EC200DD0A11 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		ACD51B341D8FC82A00814D89 /* YJCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD51B381D8FC82A00814D89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACD51B411D8FC82A00814D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -606,6 +611,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AC821AC51DB75E9200DD0A11 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				AC821AC61DB75E9200DD0A11 /* MMSettingViewController.h */,
+				AC821AC71DB75E9200DD0A11 /* MMSettingViewController.m */,
+				AC821AC91DB75EC200DD0A11 /* Setting.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		ACD51B2B1D8FC82A00814D89 = {
 			isa = PBXGroup;
 			children = (
@@ -709,6 +724,7 @@
 				AC53D28B1D9B5FEF0010B9E3 /* YJAddOrderServeApi.h */,
 				AC53D28C1D9B5FEF0010B9E3 /* YJAddOrderServeApi.m */,
 				AC24A9041D8FE9E70075596D /* OrderList.storyboard */,
+				AC821AC51DB75E9200DD0A11 /* Setting */,
 				AC808FDC1D9380C800869E78 /* Model */,
 				AC808FCC1D936F9400869E78 /* Service */,
 			);
@@ -795,6 +811,7 @@
 				AC53D2971D9B91570010B9E3 /* YJOrderServeItemHeaderView.xib in Resources */,
 				AC534F8F1D94BB8C007B1862 /* YJOrderListCellView.xib in Resources */,
 				AC5768581D9BBC810014A598 /* YJOrderServeItemInputView.xib in Resources */,
+				AC821ACA1DB75EC200DD0A11 /* Setting.storyboard in Resources */,
 				ACD51B441D8FC82A00814D89 /* Assets.xcassets in Resources */,
 				ACD51B421D8FC82A00814D89 /* Main.storyboard in Resources */,
 				AC24A9051D8FE9E70075596D /* OrderList.storyboard in Resources */,
@@ -850,6 +867,7 @@
 				AC4E9F081D91093800F3EEB3 /* YJOrderListReservedViewController.m in Sources */,
 				AC137DB81D92664B00075B1A /* YTKChainRequest.m in Sources */,
 				AC4E9EF61D90BB5200F3EEB3 /* CAppViewControllerManager.m in Sources */,
+				AC821AC81DB75E9200DD0A11 /* MMSettingViewController.m in Sources */,
 				AC137DCF1D927E1500075B1A /* Aspects.m in Sources */,
 				AC53D2951D9B91410010B9E3 /* YJOrderServeItemHeaderView.m in Sources */,
 				AC49BEA71D9A519D00BD24B1 /* UIView+WebCacheOperation.m in Sources */,
