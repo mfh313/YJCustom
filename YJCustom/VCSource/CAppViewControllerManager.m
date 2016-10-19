@@ -57,7 +57,7 @@
     UIStoryboard *settingStoryboard = [UIStoryboard storyboardWithName:@"Setting" bundle:nil];
     MMSettingViewController *settingVC = [settingStoryboard instantiateViewControllerWithIdentifier:@"MMSettingViewController"];
     MMNavigationController *settingRootNav = [[MMNavigationController alloc] initWithRootViewController:settingVC];
-    settingRootNav.tabBarItem.title = @"设置";
+    settingRootNav.tabBarItem.title = @"我";
 
     m_tabbarController = [self getTabBarController];
     m_tabbarController.viewControllers = @[rootNav,settingRootNav];
