@@ -26,7 +26,15 @@
 - (void)setTabBarBadgeValue:(NSInteger)value forIndex:(NSInteger)index
 {
     UIViewController *indexVC = self.viewControllers[index];
-    indexVC.tabBarItem.badgeValue = [NSString stringWithFormat:@"%ld",value];
+    
+    if (value > 0) {
+        indexVC.tabBarItem.badgeValue = [NSString stringWithFormat:@"%ld",value];
+    }
+    else
+    {
+        indexVC.tabBarItem.badgeValue = nil;
+    }
+    
 }
 
 
