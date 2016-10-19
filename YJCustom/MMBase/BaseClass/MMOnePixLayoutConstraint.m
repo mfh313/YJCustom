@@ -22,6 +22,18 @@
 #pragma mark - MMOnePixLine
 @implementation MMOnePixLine
 
+-(void)awakeFromNib
+{
+    [super awakeFromNib];
+    if (self.constraints.count > 0) {
+        for (NSLayoutConstraint *constraint in self.constraints) {
+            if (constraint.constant == 1) {
+                constraint.constant = MFOnePixHeigtht;
+            }
+        }
+    }
+}
+
 -(void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
