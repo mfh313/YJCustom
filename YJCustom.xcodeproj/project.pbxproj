@@ -38,6 +38,7 @@
 		AC38A1C41DB8521700293BD7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1C31DB8521700293BD7 /* CFNetwork.framework */; };
 		AC38A1C61DB8522200293BD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1C51DB8522200293BD7 /* SystemConfiguration.framework */; };
 		AC38A1C81DB8522900293BD7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1C71DB8522900293BD7 /* Security.framework */; };
+		AC38A1CB1DB85B4300293BD7 /* imageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC38A1CA1DB85B4300293BD7 /* imageAssets.xcassets */; };
 		AC49BE6C1D99FBB900BD24B1 /* MFNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6B1D99FBB900BD24B1 /* MFNetworkRequest.m */; };
 		AC49BE6F1D99FCCA00BD24B1 /* YJOrderListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6E1D99FCCA00BD24B1 /* YJOrderListApi.m */; };
 		AC49BE721D9A0ACB00BD24B1 /* UIViewController+FixBackIndicatorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE701D9A0ACB00BD24B1 /* UIViewController+FixBackIndicatorImage.m */; };
@@ -183,6 +184,7 @@
 		AC38A1C31DB8521700293BD7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		AC38A1C51DB8522200293BD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AC38A1C71DB8522900293BD7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AC38A1CA1DB85B4300293BD7 /* imageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = imageAssets.xcassets; sourceTree = "<group>"; };
 		AC49BE6A1D99FBB900BD24B1 /* MFNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkRequest.h; sourceTree = "<group>"; };
 		AC49BE6B1D99FBB900BD24B1 /* MFNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkRequest.m; sourceTree = "<group>"; };
 		AC49BE6D1D99FCCA00BD24B1 /* YJOrderListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJOrderListApi.h; sourceTree = "<group>"; };
@@ -689,6 +691,7 @@
 				AC534F821D94B2FA007B1862 /* Vender */,
 				AC80A9F51DB8502700635191 /* ThirdPartyPlugin */,
 				ACD51B431D8FC82A00814D89 /* Assets.xcassets */,
+				AC38A1CA1DB85B4300293BD7 /* imageAssets.xcassets */,
 				ACD51B451D8FC82A00814D89 /* LaunchScreen.storyboard */,
 				ACD51B481D8FC82A00814D89 /* Info.plist */,
 				AC808FC71D93640300869E78 /* YJCustom-pch.pch */,
@@ -852,6 +855,7 @@
 				AC53D2921D9B73F80010B9E3 /* YJOrderServeItemCellView.xib in Resources */,
 				AC53D2971D9B91570010B9E3 /* YJOrderServeItemHeaderView.xib in Resources */,
 				AC534F8F1D94BB8C007B1862 /* YJOrderListCellView.xib in Resources */,
+				AC38A1CB1DB85B4300293BD7 /* imageAssets.xcassets in Resources */,
 				AC5768581D9BBC810014A598 /* YJOrderServeItemInputView.xib in Resources */,
 				AC821ACA1DB75EC200DD0A11 /* Setting.storyboard in Resources */,
 				ACD51B441D8FC82A00814D89 /* Assets.xcassets in Resources */,
