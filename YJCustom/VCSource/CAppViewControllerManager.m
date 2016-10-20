@@ -50,14 +50,16 @@
     m_orderListVC = [storyboard instantiateViewControllerWithIdentifier:@"YJOrderListViewController"];
     
     MMNavigationController *rootNav = [[MMNavigationController alloc] initWithRootViewController:m_orderListVC];
-    rootNav.tabBarItem.title = @"主页";
+    UITabBarItem *homeTabItem = [[UITabBarItem alloc] initWithTitle:@"主页" image:MFImage(@"home2") selectedImage:MFImage(@"home1")];
+    rootNav.tabBarItem = homeTabItem;
     [rootNav setNavigationBarHidden:YES animated:NO];
     
     
     UIStoryboard *settingStoryboard = [UIStoryboard storyboardWithName:@"Setting" bundle:nil];
     MMSettingViewController *settingVC = [settingStoryboard instantiateViewControllerWithIdentifier:@"MMSettingViewController"];
     MMNavigationController *settingRootNav = [[MMNavigationController alloc] initWithRootViewController:settingVC];
-    settingRootNav.tabBarItem.title = @"我";
+    UITabBarItem *setTabItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:MFImage(@"set2") selectedImage:MFImage(@"set1")];
+    settingRootNav.tabBarItem = setTabItem;
 
     m_tabbarController = [self getTabBarController];
     m_tabbarController.viewControllers = @[rootNav,settingRootNav];
