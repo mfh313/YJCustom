@@ -667,8 +667,8 @@
 			isa = PBXGroup;
 			children = (
 				ACD51B361D8FC82A00814D89 /* YJCustom */,
-				ACD51B351D8FC82A00814D89 /* Products */,
 				AC4E9EF71D90C5B800F3EEB3 /* Frameworks */,
+				ACD51B351D8FC82A00814D89 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
