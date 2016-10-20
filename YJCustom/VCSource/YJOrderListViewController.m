@@ -246,13 +246,13 @@
     
 }
 
-#pragma mark - YJOrderListMgrDelegate
 #pragma mark - YJOrderListContentBaseViewControllerDelegate
 -(void)onClickOrderListAllIndex:(NSInteger)index
 {
     NSMutableArray *_allOrderListArray = [m_orderListMgr allOrderListArray];
     
     if (_allOrderListArray.count - 1 < index) {
+        NSLog(@"onClickOrderListAllIndex异常");
         return;
     }
     
