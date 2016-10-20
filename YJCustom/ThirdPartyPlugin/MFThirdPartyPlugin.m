@@ -13,6 +13,11 @@
 
 @implementation MFThirdPartyPlugin
 
+-(void)registerPlugins
+{
+    [self registerBugly];
+}
+
 -(void)registerBugly
 {
     BuglyConfig *config = [BuglyConfig new];

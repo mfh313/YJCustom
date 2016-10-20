@@ -25,7 +25,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     MFThirdPartyPlugin *thirdPartyPlugin = [[MMServiceCenter defaultCenter] getService:[MFThirdPartyPlugin class]];
-    [thirdPartyPlugin registerBugly];
+    [thirdPartyPlugin registerPlugins];
     
     NSShadow *shadow = [[NSShadow alloc]init];
     shadow.shadowColor = [UIColor clearColor];
