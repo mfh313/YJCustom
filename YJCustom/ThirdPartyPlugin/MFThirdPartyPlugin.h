@@ -10,6 +10,6 @@
 
 @interface MFThirdPartyPlugin : MMService
     
--(void)registerBugly;
+-(void)registerPlugins;
 
 @end
