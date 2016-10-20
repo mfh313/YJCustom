@@ -34,7 +34,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wvj-7h-Wc6" firstAttribute="centerX" secondItem="ajZ-K9-PuJ" secondAttribute="centerX" id="6LM-CZ-MZf"/>
-                            <constraint firstItem="2lf-Wa-0Oc" firstAttribute="top" secondItem="wvj-7h-Wc6" secondAttribute="bottom" constant="30" id="aye-xG-sop"/>
+                            <constraint firstItem="2lf-Wa-0Oc" firstAttribute="top" secondItem="wvj-7h-Wc6" secondAttribute="bottom" constant="100" id="aye-xG-sop"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -85,6 +85,8 @@
         [self.m_delegate onUserLoginUserName:_userNameTextField.text Pwd:_passwordTextField.text];
     }
 }
+    
+
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
