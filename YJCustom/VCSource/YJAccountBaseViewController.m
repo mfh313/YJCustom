@@ -85,8 +85,12 @@
         [self.m_delegate onUserLoginUserName:_userNameTextField.text Pwd:_passwordTextField.text];
     }
 }
-    
 
+#pragma mark - UITextFieldDelegate
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    return YES;
+}
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {

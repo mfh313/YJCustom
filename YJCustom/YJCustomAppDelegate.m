@@ -33,6 +33,8 @@
     [[UINavigationBar appearance] setTitleTextAttributes:textAttributes];
     [[UINavigationBar appearance] setTintColor:YJCustomDefaultColor];
     
+    [[UITextField appearance] setTintColor:YJCustomNavBarColor];
+    
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor hx_colorWithHexString:@"686868"]} forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor hx_colorWithHexString:@"f23a47"]} forState:UIControlStateSelected];
     
