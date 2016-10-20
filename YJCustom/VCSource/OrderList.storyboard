@@ -23,11 +23,11 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8Y-Cn-ZN7" customClass="MMSelectButton">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="dp4-3X-LJa"/>
+                                            <constraint firstAttribute="width" constant="75" id="dp4-3X-LJa"/>
                                             <constraint firstAttribute="height" constant="25" id="sDx-xg-3rO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="全部">
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -38,14 +38,14 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="av8-XA-u4N" customClass="MMSelectButton">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="全部">
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="custom3" translatesAutoresizingMaskIntoConstraints="NO" id="gHE-LD-3G5"/>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6o-41-Ej7" customClass="MMSelectButton">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="全部">
+                                        <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
