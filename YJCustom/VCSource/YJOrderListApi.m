@@ -27,7 +27,7 @@
 
 -(NSString *)baseUrl
 {
-    return @"http://test.joylaa.com/joylaa-o2o-api-2.0/o2o/joylaa/order/getOrderList";
+    return @"http://120.76.242.182/dekora_api/o2o/joylaa/order/getOrderList";
 }
 
 - (YTKRequestMethod)requestMethod {

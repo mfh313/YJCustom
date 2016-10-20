@@ -76,7 +76,7 @@
     for (int i = 0; i < m_headTabViews.count; i++) {
         UIButton *itemBtn = m_headTabViews[i];
         [itemBtn setTitle:_tabTitles[i] forState:UIControlStateNormal];
-        [itemBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [itemBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [itemBtn setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
         [itemBtn addTarget:self action:@selector(onClickItemBtn:) forControlEvents:UIControlEventTouchUpInside];
         [itemBtn setBackgroundImage:normalImages[i] forState:UIControlStateNormal];

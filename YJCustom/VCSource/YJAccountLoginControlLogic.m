@@ -21,8 +21,15 @@
 
 -(void)onUserLoginUserName:(NSString *)userName Pwd:(NSString *)password
 {
-    //MAFANGHUA joylaa
-    YJMemberLoginApi *loginApi = [[YJMemberLoginApi alloc] initWithUsername:@"MAFANGHUA1" password:@"111111"];
+#ifdef DEBUG
+    userName = @"zxa";
+    password = @"111111";
+#else
+    
+#endif
+    
+    
+    YJMemberLoginApi *loginApi = [[YJMemberLoginApi alloc] initWithUsername:userName password:password];
     
     __weak typeof(self) weakSelf = self;
     loginApi.animatingText = @"正在登录...";
