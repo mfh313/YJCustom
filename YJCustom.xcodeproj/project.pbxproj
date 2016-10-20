@@ -33,6 +33,11 @@
 		AC24A9031D8FE91B0075596D /* YJOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24A9021D8FE91B0075596D /* YJOrderListViewController.m */; };
 		AC24A9051D8FE9E70075596D /* OrderList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC24A9041D8FE9E70075596D /* OrderList.storyboard */; };
 		AC24A9081D8FEDFB0075596D /* YJCustomAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24A9071D8FEDFB0075596D /* YJCustomAppDelegate.m */; };
+		AC38A1C01DB8520300293BD7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1BF1DB8520300293BD7 /* libc++.tbd */; };
+		AC38A1C21DB8520E00293BD7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1C11DB8520E00293BD7 /* libz.tbd */; };
+		AC38A1C41DB8521700293BD7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1C31DB8521700293BD7 /* CFNetwork.framework */; };
+		AC38A1C61DB8522200293BD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1C51DB8522200293BD7 /* SystemConfiguration.framework */; };
+		AC38A1C81DB8522900293BD7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1C71DB8522900293BD7 /* Security.framework */; };
 		AC49BE6C1D99FBB900BD24B1 /* MFNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6B1D99FBB900BD24B1 /* MFNetworkRequest.m */; };
 		AC49BE6F1D99FCCA00BD24B1 /* YJOrderListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6E1D99FCCA00BD24B1 /* YJOrderListApi.m */; };
 		AC49BE721D9A0ACB00BD24B1 /* UIViewController+FixBackIndicatorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE701D9A0ACB00BD24B1 /* UIViewController+FixBackIndicatorImage.m */; };
@@ -105,6 +110,9 @@
 		AC808FE51D938E1100869E78 /* MMUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC808FE41D938E1100869E78 /* MMUIView.m */; };
 		AC808FE81D938E9900869E78 /* MMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC808FE71D938E9900869E78 /* MMTableViewCell.m */; };
 		AC808FEB1D93BCB900869E78 /* NSString+MMWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = AC808FEA1D93BCB900869E78 /* NSString+MMWidth.m */; };
+		AC80A9F81DB8508500635191 /* MFThirdPartyPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AC80A9F71DB8508500635191 /* MFThirdPartyPlugin.m */; };
+		AC80A9FA1DB8515300635191 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80A9F91DB8515300635191 /* Bugly.framework */; };
+		AC80A9FC1DB851B800635191 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80A9FB1DB851B800635191 /* JavaScriptCore.framework */; };
 		AC821ABE1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AC821ABD1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m */; };
 		AC821AC11DB748AD00DD0A11 /* MMSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AC821AC01DB748AD00DD0A11 /* MMSelectButton.m */; };
 		AC821AC81DB75E9200DD0A11 /* MMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC821AC71DB75E9200DD0A11 /* MMSettingViewController.m */; };
@@ -170,6 +178,11 @@
 		AC24A9041D8FE9E70075596D /* OrderList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderList.storyboard; sourceTree = "<group>"; };
 		AC24A9061D8FEDFB0075596D /* YJCustomAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCustomAppDelegate.h; sourceTree = "<group>"; };
 		AC24A9071D8FEDFB0075596D /* YJCustomAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCustomAppDelegate.m; sourceTree = "<group>"; };
+		AC38A1BF1DB8520300293BD7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AC38A1C11DB8520E00293BD7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AC38A1C31DB8521700293BD7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AC38A1C51DB8522200293BD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AC38A1C71DB8522900293BD7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		AC49BE6A1D99FBB900BD24B1 /* MFNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkRequest.h; sourceTree = "<group>"; };
 		AC49BE6B1D99FBB900BD24B1 /* MFNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkRequest.m; sourceTree = "<group>"; };
 		AC49BE6D1D99FCCA00BD24B1 /* YJOrderListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJOrderListApi.h; sourceTree = "<group>"; };
@@ -314,6 +327,10 @@
 		AC808FE71D938E9900869E78 /* MMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewCell.m; sourceTree = "<group>"; };
 		AC808FE91D93BCB900869E78 /* NSString+MMWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MMWidth.h"; sourceTree = "<group>"; };
 		AC808FEA1D93BCB900869E78 /* NSString+MMWidth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MMWidth.m"; sourceTree = "<group>"; };
+		AC80A9F61DB8508500635191 /* MFThirdPartyPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFThirdPartyPlugin.h; sourceTree = "<group>"; };
+		AC80A9F71DB8508500635191 /* MFThirdPartyPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFThirdPartyPlugin.m; sourceTree = "<group>"; };
+		AC80A9F91DB8515300635191 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		AC80A9FB1DB851B800635191 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		AC821ABC1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMOnePixLayoutConstraint.h; sourceTree = "<group>"; };
 		AC821ABD1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMOnePixLayoutConstraint.m; sourceTree = "<group>"; };
 		AC821ABF1DB748AD00DD0A11 /* MMSelectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSelectButton.h; sourceTree = "<group>"; };
@@ -336,8 +353,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC38A1C81DB8522900293BD7 /* Security.framework in Frameworks */,
+				AC38A1C61DB8522200293BD7 /* SystemConfiguration.framework in Frameworks */,
+				AC38A1C41DB8521700293BD7 /* CFNetwork.framework in Frameworks */,
+				AC38A1C21DB8520E00293BD7 /* libz.tbd in Frameworks */,
+				AC38A1C01DB8520300293BD7 /* libc++.tbd in Frameworks */,
+				AC80A9FC1DB851B800635191 /* JavaScriptCore.framework in Frameworks */,
 				AC137DD11D92901A00075B1A /* CoreGraphics.framework in Frameworks */,
 				AC4E9F181D91145800F3EEB3 /* Foundation.framework in Frameworks */,
+				AC80A9FA1DB8515300635191 /* Bugly.framework in Frameworks */,
 				AC4E9EF91D90C5B900F3EEB3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +516,12 @@
 		AC4E9EF71D90C5B800F3EEB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC38A1C71DB8522900293BD7 /* Security.framework */,
+				AC38A1C51DB8522200293BD7 /* SystemConfiguration.framework */,
+				AC38A1C31DB8521700293BD7 /* CFNetwork.framework */,
+				AC38A1C11DB8520E00293BD7 /* libz.tbd */,
+				AC38A1BF1DB8520300293BD7 /* libc++.tbd */,
+				AC80A9FB1DB851B800635191 /* JavaScriptCore.framework */,
 				AC137DD01D92901A00075B1A /* CoreGraphics.framework */,
 				AC4E9F171D91145800F3EEB3 /* Foundation.framework */,
 				AC4E9EF81D90C5B900F3EEB3 /* UIKit.framework */,
@@ -611,6 +641,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AC80A9F51DB8502700635191 /* ThirdPartyPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				AC80A9F61DB8508500635191 /* MFThirdPartyPlugin.h */,
+				AC80A9F71DB8508500635191 /* MFThirdPartyPlugin.m */,
+				AC80A9F91DB8515300635191 /* Bugly.framework */,
+			);
+			path = ThirdPartyPlugin;
+			sourceTree = "<group>";
+		};
 		AC821AC51DB75E9200DD0A11 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -643,10 +683,11 @@
 			children = (
 				AC24A9061D8FEDFB0075596D /* YJCustomAppDelegate.h */,
 				AC24A9071D8FEDFB0075596D /* YJCustomAppDelegate.m */,
+				ACD51B401D8FC82A00814D89 /* Main.storyboard */,
 				ACD51B541D8FCCF800814D89 /* VCSource */,
 				ACD51B571D8FCCF800814D89 /* MMBase */,
 				AC534F821D94B2FA007B1862 /* Vender */,
-				ACD51B401D8FC82A00814D89 /* Main.storyboard */,
+				AC80A9F51DB8502700635191 /* ThirdPartyPlugin */,
 				ACD51B431D8FC82A00814D89 /* Assets.xcassets */,
 				ACD51B451D8FC82A00814D89 /* LaunchScreen.storyboard */,
 				ACD51B481D8FC82A00814D89 /* Info.plist */,
@@ -757,6 +798,7 @@
 				ACD51B301D8FC82A00814D89 /* Sources */,
 				ACD51B311D8FC82A00814D89 /* Frameworks */,
 				ACD51B321D8FC82A00814D89 /* Resources */,
+				AC38A1C91DB852AF00293BD7 /* Run Script For Bugly dSYM Upload */,
 			);
 			buildRules = (
 			);
@@ -819,6 +861,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC38A1C91DB852AF00293BD7 /* Run Script For Bugly dSYM Upload */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script For Bugly dSYM Upload";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n# Copyright 2014-2016 Bugly, Tencent. All rights reserved.\n#\n# V1.2.1\n#\n# 2016.03.02\n#\n#\n################################################################################\n# # 注意: 请配置下面的信息\n################################################################################\nBUGLY_APP_ID=\"900056633\"\nBUGLY_APP_KEY=\"Dt5nlphnWm6YYCtk\"\nBUNDLE_IDENTIFIER=\"com.eeka.yjcustom\"\n################################################################################\n# # 自定义配置\n################################################################################\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\nUPLOAD_DEBUG_SYMBOLS=1\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\n# UPLOAD_SIMULATOR_SYMBOLS=0\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n#\n#\n# This script will extract symbols from the .dSYM and generate .symbol file(Bugly supported) and upload to server.\n# You could visit http://bugly.qq.com to get more details about Bugly.(Optional: buylyweb.et.wsd.com)\n#\n# Usage:\n#   * The instructions assume you have copyed this script into your project int Xcode.\n#   * Copy the \"buglySymbolIOS.jar\" file into the \"~/bin\" folder.\n#   * Open the project editor, select your build target.\n#   * Click \"Build Phases\" at the top of the project editor.\n#   * Click \"+\" button in the top left corner and select \"New Run Script Phase\".\n#   * Click \"Run Script\".\n#   * Paste the following script into the dark text box. You will have to uncomment the lines (remove the #) of course.\n#\n# --- SCRIPT BEGINS ON NEXT LINE, COPY AND EDIT FROM THERE ---\n#\n#\n#\n# --- END OF SCRIPT ---\n\n\n################################################################################\n# 注意: 如果你不知道此脚本的执行流程和用法，请不要随便修改！\n################################################################################\n\n# 退出执行并打印提示信息\nexitWithMessage() {\n    echo \"--------------------------------\"\n    echo -e \"${1}\"\n    echo \"--------------------------------\"\n    echo \"No upload and exit.\"\n    echo \"----------------------------------------------------------------\"\n    exit ${2}\n}\n\necho \"----------------------------------------------------------------\"\necho \"Copyright 2014-2015 Bugly @Tencent. All rights reserved.\"\n\necho \"This script will extract symbols from the .dSYM file and generate .symbol file(Bugly supported) and upload to server.\"\necho \"You could visit http://bugly.qq.com to get more details about Bugly.\"\necho \"----------------------------------------------------------------\"\n\necho \"Uploading dSYM to Bugly.\"\necho \"\"\n\n# Bugly服务域名\nDSYM_UPLOAD_DOMAIN=\"bugly.qq.com\"\n\n# 读取Info.plist文件中的版本信息\necho \"Info.Plist : ${INFOPLIST_FILE}\"\n\nBUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\nBUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n\n# 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\nif [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\nBUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\nelse\nBUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\nfi\n\n# Bugly符号提取工具路径, 请确保buglySymboliOS.jar的路径是正确的\nBUGLY_SYMBOL_JAR_PATH=\"${SRCROOT}/dsymtool/buglySymboliOS.jar\"\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\nBUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\necho \"--------------------------------\"\necho \"Step 1: Prepare application information.\"\necho \"--------------------------------\"\n\necho \"Product Name: ${PRODUCT_NAME}\"\necho \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\necho \"Version: ${BUNDLE_SHORT_VERSION}\"\necho \"Build: ${BUNDLE_VERSION}\"\n\necho \"Bugly App ID: ${BUGLY_APP_ID}\"\necho \"Bugly App key: ${BUGLY_APP_KEY}\"\necho \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n\necho \"--------------------------------\"\necho \"Step 2: Check the arguments ...\"\n\n##检查模拟器编译是否允许上传符号\nif [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\nif [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否是Release模式编译\nif [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\nif [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否Archive操作\nif [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\nif [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\necho \"Archive the package\"\nelse\nexitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\nfi\nfi\n\n# 检查必须参数是否设置\nif [ ! \"${BUGLY_APP_ID}\" ]; then\nexitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\nfi\nif [[ \"${BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\nexitWithMessage \"Error: Bugly App ID not defined.\" 0\nfi\n\nif [ ! \"${BUGLY_APP_KEY}\" ]; then\nexitWithMessage \"Error: Bugly APP Key not defined.\" 0\nfi\n\nif [ ! \"${BUNDLE_IDENTIFIER}\" ]; then\nexitWithMessage \"Error: Bundle Identifier not defined.\" 0\nfi\n\nfunction uploadDSYM {\n    DSYM_SRC=\"$1\"\n    echo \".dSYM file: ${DSYM_SRC}\"\n    if [ ! -d \"$DSYM_SRC\" ]; then\n    exitWithMessage \"dSYM source not found: ${DSYM_SRC}\" 0\n    fi\n    DSYM_FILE_NAME=${DSYM_SRC##*/}\n        DSYM_SYMBOL_OUT_ZIP_NAME=\"${DSYM_FILE_NAME}.bSymbol.zip\"\n        # 替换空格\n        DSYM_SYMBOL_OUT_ZIP_NAME=\"${DSYM_SYMBOL_OUT_ZIP_NAME// /_}\"\n        \n        # 声明符号表临时目录和备份目录\n        DSYM_ZIP_OUT_DIR=${BUILD_DIR}/BuglySymbolsTemp\n        DSYM_SYMBOL_BACKUP_DIR=${BUILD_DIR}/BuglySymbolsBackup\n        \n        if [ ! -e \"${DSYM_ZIP_OUT_DIR}\" ]; then\n        mkdir ${DSYM_ZIP_OUT_DIR}\n        fi\n        \n        if [ ! -e \"${DSYM_SYMBOL_BACKUP_DIR}\" ]; then\n        mkdir ${DSYM_SYMBOL_BACKUP_DIR}\n        fi\n        \n        # 备份并清理\n        find ${DSYM_ZIP_OUT_DIR} -name \"*.bSymbol.zip\" -print0 | xargs -0 -I {} mv {} ${DSYM_SYMBOL_BACKUP_DIR}\n        /bin/rm -rf \"${DSYM_ZIP_OUT_DIR}/*.bSymbol.zip\"\n        \n        DSYM_ZIP_FPATH=\"${DSYM_ZIP_OUT_DIR}/${DSYM_SYMBOL_OUT_ZIP_NAME}\"\n        \n        # 提取符号信息\n        echo \"--------------------------------\"\n        echo \"Step 3: Extract symbol info from .dSYM file. to ${DSYM_ZIP_FPATH}\"\n        \n        if [ ! -f \"$BUGLY_SYMBOL_JAR_PATH\" ]; then\n        exitWithMessage \"Error: Jar file '${BUGLY_SYMBOL_JAR_PATH}' was not found. \\nPlease copy the jar file into ~/bin folder.\" 1\n        fi\n        \n        echo \"--------------------------------\"\n        (/usr/bin/java -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_SRC}\" -o \"${DSYM_ZIP_FPATH}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\n        echo \"--------------------------------\"\n        \n        if [ ! -e \"${DSYM_ZIP_FPATH}\" ]; then\n        DSYM_SYMBOL_OUT_ZIP_NAME=$(ls ${DSYM_ZIP_OUT_DIR} | grep \".bSymbol.zip\")\n        DSYM_ZIP_FPATH=\"${DSYM_ZIP_OUT_DIR}/${DSYM_SYMBOL_OUT_ZIP_NAME}\"\n        DSYM_SYMBOL_OUT_ZIP_NAME=${DSYM_SYMBOL_OUT_ZIP_NAME//&/_}\n            fi\n            \n            if [ ! -e \"${DSYM_ZIP_FPATH}\" ] ; then\n            exitWithMessage \"no symbol file zip archive generated: ${DSYM_ZIP_FPATH}\" 0\n            fi\n            \n            echo \"Step 4: Upload the symbols of dSYM.\"\n            echo \"--------------------------------\"\n            echo \"zip : ${DSYM_SYMBOL_OUT_ZIP_NAME}\"\n            echo \"dir : ${DSYM_ZIP_FPATH}\"\n            \n            echo \"dSYM upload domain: ${DSYM_UPLOAD_DOMAIN}\"\n            DSYM_UPLOAD_URL=\"http://${DSYM_UPLOAD_DOMAIN}/upload/dsym?app=${BUGLY_APP_ID}&pid=2&ver=${BUGLY_APP_VERSION}&n=${DSYM_SYMBOL_OUT_ZIP_NAME}&key=${BUGLY_APP_KEY}&bid=${BUNDLE_IDENTIFIER}\"\n            echo \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n            \n            # Upload dSYM to Bugly\n            echo \"curl --header \"Content-Type:application/zip\" --data-binary \"@${DSYM_ZIP_FPATH}\" \"${DSYM_UPLOAD_URL}\" --verbose\"\n            \n            echo \"--------------------------------\"\n            STATUS=$(/usr/bin/curl --header \"Content-Type:application/zip\" --data-binary \"@${DSYM_ZIP_FPATH}\" \"${DSYM_UPLOAD_URL}\" --verbose)\n            echo \"--------------------------------\"\n            \n            UPLOAD_RESULT=\"FAILTURE\"\n            echo \"Bugly server response: ${STATUS}\"\n            if [ ! \"${STATUS}\" ]; then\n            echo \"Error: Failed to upload the zip archive file.\"\n            elif [[ \"${STATUS}\" == *\":true\"* ]]; then\n            echo \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\n            UPLOAD_RESULT=\"SUCCESS\"\n            else\n            echo \"Error: Failed to upload the zip archive file to Bugly.\"\n            fi\n            \n            #Remove temp dSYM archive\n            echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n            #/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n            \n            if [ \"$?\" -ne 0 ]; then\n            exitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\n            fi\n            \n            echo \"--------------------------------\"\n            echo \"${UPLOAD_RESULT} - dSYM upload complete.\"\n            \n            if [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\n            echo \"--------------------------------\"\n            echo \"Failed to upload the dSYM\"\n            echo \"Please check the script and try it again.\"\n            fi\n            \n            echo \"----------------------------------------------------------------\"\n        }\n        \n        # .dSYM文件信息\n        \n        DSYM_FOLDER=\"${DWARF_DSYM_FOLDER_PATH}\"\n        IFS=$'\\n'\n        \n        echo \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\n        RET=\"F\"\n        \n        for dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\n        RET=\"T\"\n        echo \"Found dSYM file: $dsymFile\"\n        uploadDSYM $dsymFile\n        done\n        \n        if [ $RET = \"F\" ]; then\n        exitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\n        fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACD51B301D8FC82A00814D89 /* Sources */ = {
@@ -885,6 +944,7 @@
 				AC49BEA61D9A519D00BD24B1 /* UIImageView+WebCache.m in Sources */,
 				AC534F881D94B2FA007B1862 /* XXNibBridge.m in Sources */,
 				AC53D29A1D9B9F0D0010B9E3 /* YJAddOrderServeViewController.m in Sources */,
+				AC80A9F81DB8508500635191 /* MFThirdPartyPlugin.m in Sources */,
 				AC49BE9E1D9A519D00BD24B1 /* SDWebImageDownloaderOperation.m in Sources */,
 				AC7B4ADB1D9E327A00B70861 /* YTKBatchRequest+AnimatingAccessory.m in Sources */,
 				AC53D2901D9B73DD0010B9E3 /* YJOrderServeItemCellView.m in Sources */,
@@ -1040,11 +1100,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2C97V99SA2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YJCustom/ThirdPartyPlugin",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YJCustom/YJCustom-pch.pch";
 				INFOPLIST_FILE = YJCustom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YJCustom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eeka.yjcustom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1054,11 +1118,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2C97V99SA2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YJCustom/ThirdPartyPlugin",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YJCustom/YJCustom-pch.pch";
 				INFOPLIST_FILE = YJCustom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YJCustom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eeka.yjcustom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

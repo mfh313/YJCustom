@@ -9,6 +9,7 @@
 #import "YJCustomAppDelegate.h"
 #import "CAppViewControllerManager.h"
 #import "MMServiceCenter.h"
+#import "MFThirdPartyPlugin.h"
 
 @interface YJCustomAppDelegate ()
 {
@@ -22,6 +23,9 @@
 @implementation YJCustomAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    MFThirdPartyPlugin *thirdPartyPlugin = [[MMServiceCenter defaultCenter] getService:[MFThirdPartyPlugin class]];
+    [thirdPartyPlugin registerBugly];
     
     NSShadow *shadow = [[NSShadow alloc]init];
     shadow.shadowColor = [UIColor clearColor];
