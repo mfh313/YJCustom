@@ -39,6 +39,10 @@
 		AC38A1C61DB8522200293BD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1C51DB8522200293BD7 /* SystemConfiguration.framework */; };
 		AC38A1C81DB8522900293BD7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC38A1C71DB8522900293BD7 /* Security.framework */; };
 		AC38A1CB1DB85B4300293BD7 /* imageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC38A1CA1DB85B4300293BD7 /* imageAssets.xcassets */; };
+		AC38A1CE1DB8BE5800293BD7 /* MMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AC38A1CD1DB8BE5800293BD7 /* MMObject.m */; };
+		AC38A1D11DB8BED600293BD7 /* MMBaseInfoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC38A1D01DB8BED600293BD7 /* MMBaseInfoItem.m */; };
+		AC38A1D41DB8C53700293BD7 /* MMBaseTextFieldItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC38A1D31DB8C53700293BD7 /* MMBaseTextFieldItem.m */; };
+		AC38A1D71DB8C5A500293BD7 /* MMUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AC38A1D61DB8C5A500293BD7 /* MMUITextField.m */; };
 		AC49BE6C1D99FBB900BD24B1 /* MFNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6B1D99FBB900BD24B1 /* MFNetworkRequest.m */; };
 		AC49BE6F1D99FCCA00BD24B1 /* YJOrderListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6E1D99FCCA00BD24B1 /* YJOrderListApi.m */; };
 		AC49BE721D9A0ACB00BD24B1 /* UIViewController+FixBackIndicatorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE701D9A0ACB00BD24B1 /* UIViewController+FixBackIndicatorImage.m */; };
@@ -185,6 +189,14 @@
 		AC38A1C51DB8522200293BD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AC38A1C71DB8522900293BD7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		AC38A1CA1DB85B4300293BD7 /* imageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = imageAssets.xcassets; sourceTree = "<group>"; };
+		AC38A1CC1DB8BE5800293BD7 /* MMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMObject.h; sourceTree = "<group>"; };
+		AC38A1CD1DB8BE5800293BD7 /* MMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMObject.m; sourceTree = "<group>"; };
+		AC38A1CF1DB8BED600293BD7 /* MMBaseInfoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBaseInfoItem.h; sourceTree = "<group>"; };
+		AC38A1D01DB8BED600293BD7 /* MMBaseInfoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBaseInfoItem.m; sourceTree = "<group>"; };
+		AC38A1D21DB8C53700293BD7 /* MMBaseTextFieldItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBaseTextFieldItem.h; sourceTree = "<group>"; };
+		AC38A1D31DB8C53700293BD7 /* MMBaseTextFieldItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBaseTextFieldItem.m; sourceTree = "<group>"; };
+		AC38A1D51DB8C5A500293BD7 /* MMUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUITextField.h; sourceTree = "<group>"; };
+		AC38A1D61DB8C5A500293BD7 /* MMUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUITextField.m; sourceTree = "<group>"; };
 		AC49BE6A1D99FBB900BD24B1 /* MFNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkRequest.h; sourceTree = "<group>"; };
 		AC49BE6B1D99FBB900BD24B1 /* MFNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkRequest.m; sourceTree = "<group>"; };
 		AC49BE6D1D99FCCA00BD24B1 /* YJOrderListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJOrderListApi.h; sourceTree = "<group>"; };
@@ -471,6 +483,14 @@
 				AC821ABD1DB7084E00DD0A11 /* MMOnePixLayoutConstraint.m */,
 				AC821ABF1DB748AD00DD0A11 /* MMSelectButton.h */,
 				AC821AC01DB748AD00DD0A11 /* MMSelectButton.m */,
+				AC38A1CC1DB8BE5800293BD7 /* MMObject.h */,
+				AC38A1CD1DB8BE5800293BD7 /* MMObject.m */,
+				AC38A1D51DB8C5A500293BD7 /* MMUITextField.h */,
+				AC38A1D61DB8C5A500293BD7 /* MMUITextField.m */,
+				AC38A1CF1DB8BED600293BD7 /* MMBaseInfoItem.h */,
+				AC38A1D01DB8BED600293BD7 /* MMBaseInfoItem.m */,
+				AC38A1D21DB8C53700293BD7 /* MMBaseTextFieldItem.h */,
+				AC38A1D31DB8C53700293BD7 /* MMBaseTextFieldItem.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -907,6 +927,7 @@
 				AC7B4ACF1D9E305300B70861 /* MBProgressHUD.m in Sources */,
 				AC49BEA01D9A519D00BD24B1 /* SDWebImagePrefetcher.m in Sources */,
 				AC808FD21D93734600869E78 /* MMServiceCenter.m in Sources */,
+				AC38A1D71DB8C5A500293BD7 /* MMUITextField.m in Sources */,
 				AC821AC11DB748AD00DD0A11 /* MMSelectButton.m in Sources */,
 				AC4E9F151D910F4500F3EEB3 /* UIView+Extend.m in Sources */,
 				AC534F971D94CE4F007B1862 /* UIScrollView+SVPullToRefresh.m in Sources */,
@@ -917,6 +938,8 @@
 				AC49BEA51D9A519D00BD24B1 /* UIImageView+HighlightedWebCache.m in Sources */,
 				AC49BE6C1D99FBB900BD24B1 /* MFNetworkRequest.m in Sources */,
 				AC137D991D92177300075B1A /* AFURLSessionManager.m in Sources */,
+				AC38A1CE1DB8BE5800293BD7 /* MMObject.m in Sources */,
+				AC38A1D41DB8C53700293BD7 /* MMBaseTextFieldItem.m in Sources */,
 				AC53D2811D9B515B0010B9E3 /* YJGetOrderServerApi.m in Sources */,
 				AC137DB61D92664B00075B1A /* YTKBatchRequest.m in Sources */,
 				AC4E9F161D910F4500F3EEB3 /* UIView+threadHook.m in Sources */,
@@ -954,6 +977,7 @@
 				AC53D2901D9B73DD0010B9E3 /* YJOrderServeItemCellView.m in Sources */,
 				AC534F811D94B1C3007B1862 /* YJOrderListCellView.m in Sources */,
 				AC4E9EFC1D90C6B800F3EEB3 /* MMTabBarController.m in Sources */,
+				AC38A1D11DB8BED600293BD7 /* MMBaseInfoItem.m in Sources */,
 				AC137D941D92177300075B1A /* AFHTTPSessionManager.m in Sources */,
 				AC49BEAB1D9A5FDA00BD24B1 /* MMNavigationController.m in Sources */,
 				AC49BE9F1D9A519D00BD24B1 /* SDWebImageManager.m in Sources */,
