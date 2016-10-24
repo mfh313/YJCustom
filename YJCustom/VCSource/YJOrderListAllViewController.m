@@ -96,9 +96,6 @@
     _orderListApi.page = 1;
     [_orderListApi startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
         
-        [_allOrderListArray removeAllObjects];
-        
-
         NSMutableDictionary *response = request.responseJSONObject;
         
         if (response[@"total"]) {
@@ -106,12 +103,16 @@
             _orderListItemMaxCount = count.integerValue;
         }
         
+        NSMutableArray *allOrderListArray = [NSMutableArray array];
         NSMutableArray *dataArray = response[@"data"];
         for (int i = 0; i < dataArray.count; i++) {
             YJOrderListDataItem *dataItem = [YJOrderListDataItem MM_modelWithDictionary:dataArray[i]];
             
-            [_allOrderListArray addObject:dataItem];
+            [allOrderListArray addObject:dataItem];
         }
+        
+        [_allOrderListArray removeAllObjects];
+        _allOrderListArray = allOrderListArray;
         
         YJOrderListMgr* m_orderListMgr = [[MMServiceCenter defaultCenter] getService:[YJOrderListMgr class]];
         m_orderListMgr.allOrderListArray = _allOrderListArray;
