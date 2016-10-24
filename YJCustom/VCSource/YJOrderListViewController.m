@@ -256,6 +256,8 @@
         return;
     }
     
+    NSCAssert(_allOrderListArray.count > 0, @"onClickOrderListAllIndex=null");
+    
     YJOrderListDataItem *dataItem = _allOrderListArray[index];
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"OrderList" bundle:nil];
