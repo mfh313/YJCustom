@@ -35,6 +35,15 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillChangeFrameNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:nil];
+    
+    [self checkLoginBtnStatus];
+
+}
+
+- (void)textFieldDidChange:(NSNotification *)obj
+{
+    [self checkLoginBtnStatus];
 }
 
 - (void)keyboardWillShow:(NSNotification *)note
@@ -91,6 +100,28 @@
 {
     return YES;
 }
+
+-(void)checkLoginBtnStatus
+{
+    if (![self stringNull:_passwordTextField.text]
+        && ![self stringNull:_userNameTextField.text]) {
+        [_loginBtn setEnabled:YES];
+    }
+    else
+    {
+        [_loginBtn setEnabled:NO];
+    }
+}
+
+-(BOOL)stringNull:(NSString *)string
+{
+    if (!string || [string isEqualToString:@""]) {
+        return YES;
+    }
+    
+    return NO;
+}
+
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
