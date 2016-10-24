@@ -115,11 +115,15 @@
 
 -(BOOL)stringNull:(NSString *)string
 {
+#ifdef DEBUG
+    return NO;
+#else
     if (!string || [string isEqualToString:@""]) {
         return YES;
     }
     
     return NO;
+#endif
 }
 
 
