@@ -28,6 +28,9 @@
     
 #endif
     
+    if (!userName || !password) {
+        return;
+    }
     
     YJMemberLoginApi *loginApi = [[YJMemberLoginApi alloc] initWithUsername:userName password:password];
     
