@@ -40,6 +40,12 @@
     
     [loginApi startWithCompletionBlockWithSuccess:^(YTKBaseRequest * request) {
         
+        
+        if (!loginApi.loginSuccess) {
+            NSLog(@"loginApi.errorMessage=%@",loginApi.errorMessage);
+            return;
+        }
+        
         YJLoginModel *loginModel = [YJLoginModel MM_modelWithJSON:request.responseJSONObject];
         
         YJAccountMgr *accountMgr = [[MMServiceCenter defaultCenter] getService:[YJAccountMgr class]];

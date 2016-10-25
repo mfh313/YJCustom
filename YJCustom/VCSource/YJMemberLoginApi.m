@@ -40,4 +40,22 @@
              };
 }
 
+-(BOOL)loginSuccess
+{
+    NSDictionary *dict = self.responseJSONObject;
+    NSNumber *number = dict[@"success"];
+    return number.boolValue;
+}
+
+-(NSString*)errorMessage
+{
+    NSDictionary *dict = self.responseJSONObject;
+    id string = dict[@"msg"];
+    if ([string isKindOfClass:[NSNull class]]) {
+        string = @"账号或密码错误";
+    }
+    
+    return string;
+}
+
 @end

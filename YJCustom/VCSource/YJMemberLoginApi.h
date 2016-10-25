@@ -12,4 +12,7 @@
 
 -(id)initWithUsername:(NSString *)username password:(NSString *)password;
 
+-(BOOL)loginSuccess;
+-(NSString*)errorMessage;
+
 @end
