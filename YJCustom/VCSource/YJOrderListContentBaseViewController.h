@@ -17,6 +17,7 @@
 @optional
 
 -(void)onClickOrderListAllIndex:(NSInteger)index;
+-(void)onClickOrderListAllIndex:(NSInteger)index progress:(NSString *)progress;
 
 @end
 

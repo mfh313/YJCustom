@@ -77,9 +77,6 @@
             [_allOrderListArray addObject:dataItem];
         }
         
-        YJOrderListMgr* m_orderListMgr = [[MMServiceCenter defaultCenter] getService:[YJOrderListMgr class]];
-        m_orderListMgr.allOrderListArray = _allOrderListArray;
-        
         [weakSelf onGetOrderListAll:_allOrderListArray];
         [weakSelf.tableView.infiniteScrollingView stopAnimating];
         
@@ -116,7 +113,13 @@
             _allOrderListArray = allOrderListArray;
             
             YJOrderListMgr* m_orderListMgr = [[MMServiceCenter defaultCenter] getService:[YJOrderListMgr class]];
-            m_orderListMgr.allOrderListArray = _allOrderListArray;
+            if (self.progress) {
+                [m_orderListMgr setOrderListArrayForKey:self.progress array:_allOrderListArray];
+            }
+            else
+            {
+                [m_orderListMgr setAllOrderListArray:_allOrderListArray];
+            }
             
             [weakSelf onGetOrderListAll:_allOrderListArray];
             [weakSelf.tableView.pullToRefreshView stopAnimating];
@@ -175,8 +178,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if ([self.m_delegate respondsToSelector:@selector(onClickOrderListAllIndex:)]) {
-        [self.m_delegate onClickOrderListAllIndex:indexPath.row];
+    if ([self.m_delegate respondsToSelector:@selector(onClickOrderListAllIndex:progress:)]) {
+        [self.m_delegate onClickOrderListAllIndex:indexPath.row progress:self.progress];
     }
 }
 

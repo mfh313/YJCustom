@@ -247,19 +247,17 @@
 }
 
 #pragma mark - YJOrderListContentBaseViewControllerDelegate
--(void)onClickOrderListAllIndex:(NSInteger)index
+-(void)onClickOrderListAllIndex:(NSInteger)index progress:(NSString *)progress
 {
-    NSMutableArray *_allOrderListArray = [m_orderListMgr allOrderListArray];
+    NSMutableArray *orderListArray = [m_orderListMgr allOrderListArray];
     
-    if (_allOrderListArray.count - 1 < index) {
-        NSLog(@"onClickOrderListAllIndex异常");
-        return;
+    if (progress) {
+        orderListArray = [m_orderListMgr orderListArrayForKey:progress];
     }
     
-    NSCAssert(_allOrderListArray.count > 0, @"onClickOrderListAllIndex=null");
+    NSCAssert(orderListArray.count > 0, @"orderListArray=null");
     
-    YJOrderListDataItem *dataItem = _allOrderListArray[index];
-    
+    YJOrderListDataItem *dataItem = orderListArray[index];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"OrderList" bundle:nil];
     YJOrderListItemDetailViewController *detailVC = [storyboard instantiateViewControllerWithIdentifier:@"YJOrderListItemDetailViewController"];
     detailVC.dataItem = dataItem;

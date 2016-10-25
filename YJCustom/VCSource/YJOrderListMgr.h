@@ -17,17 +17,18 @@
 
 @interface YJOrderListMgr : MMService
 {
-    NSMutableArray *_allOrderListArray;
-    NSMutableArray *_reservedListArray;
-    NSMutableArray *_untreatedListArray;
+    NSMutableDictionary *_orderListDic;
 }
 
 @property (nonatomic,weak) id<YJOrderListMgrDelegate> delegate;
-@property (nonatomic,strong) NSMutableArray *allOrderListArray;
-@property (nonatomic,strong) NSMutableArray *reservedListArray;
-@property (nonatomic,strong) NSMutableArray *untreatedListArray;
 
 -(NSMutableArray *)allServeItemList;
+
+-(NSMutableArray *)orderListArrayForKey:(NSString *)key;
+-(void)setOrderListArrayForKey:(NSString *)key array:(NSMutableArray *)array;
+
+-(void)setAllOrderListArray:(NSMutableArray *)array;
+-(NSMutableArray *)allOrderListArray;
 
 
 @end

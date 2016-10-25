@@ -27,10 +27,7 @@
 {
     self = [super init];
     if (self) {
-        _allOrderListArray = [NSMutableArray array];
-        _reservedListArray = [NSMutableArray array];
-        _untreatedListArray = [NSMutableArray array];
-        
+        _orderListDic = [NSMutableDictionary dictionary];
         [self getAllServeItemList];
     }
     
@@ -66,19 +63,24 @@
     return _allServeItemList;
 }
 
+-(NSMutableArray *)orderListArrayForKey:(NSString *)key
+{
+    return _orderListDic[key];
+}
+
+-(void)setOrderListArrayForKey:(NSString *)key array:(NSMutableArray *)array
+{
+    _orderListDic[key] = array;
+}
+
+-(void)setAllOrderListArray:(NSMutableArray *)array
+{
+    [self setOrderListArrayForKey:@"YJOrderListMgr_all" array:array];
+}
+
 -(NSMutableArray *)allOrderListArray
 {
-    return _allOrderListArray;
-}
-
--(NSMutableArray *)reservedListArray
-{
-    return _reservedListArray;
-}
-
--(NSMutableArray *)untreatedListArray
-{
-    return _untreatedListArray;
+    return _orderListDic[@"YJOrderListMgr_all"];
 }
 
 
