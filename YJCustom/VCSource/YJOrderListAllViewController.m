@@ -108,24 +108,22 @@
             [allOrderListArray addObject:dataItem];
         }
         
-        @synchronized (_allOrderListArray) {
-            [_allOrderListArray removeAllObjects];
-            _allOrderListArray = allOrderListArray;
-            
-            YJOrderListMgr* m_orderListMgr = [[MMServiceCenter defaultCenter] getService:[YJOrderListMgr class]];
-            if (self.progress) {
-                [m_orderListMgr setOrderListArrayForKey:self.progress array:_allOrderListArray];
-            }
-            else
-            {
-                [m_orderListMgr setAllOrderListArray:_allOrderListArray];
-            }
-            
-            [weakSelf onGetOrderListAll:_allOrderListArray];
-            [weakSelf.tableView.pullToRefreshView stopAnimating];
-            
-            [weakSelf setTabBarBadgeValue];
+        [_allOrderListArray removeAllObjects];
+        _allOrderListArray = allOrderListArray;
+        
+        YJOrderListMgr* m_orderListMgr = [[MMServiceCenter defaultCenter] getService:[YJOrderListMgr class]];
+        if (self.progress) {
+            [m_orderListMgr setOrderListArrayForKey:self.progress array:_allOrderListArray];
         }
+        else
+        {
+            [m_orderListMgr setAllOrderListArray:_allOrderListArray];
+        }
+        
+        [weakSelf onGetOrderListAll:_allOrderListArray];
+        [weakSelf.tableView.pullToRefreshView stopAnimating];
+        
+        [weakSelf setTabBarBadgeValue];
         
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
         
