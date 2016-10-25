@@ -43,6 +43,7 @@
 		AC38A1D11DB8BED600293BD7 /* MMBaseInfoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC38A1D01DB8BED600293BD7 /* MMBaseInfoItem.m */; };
 		AC38A1D41DB8C53700293BD7 /* MMBaseTextFieldItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AC38A1D31DB8C53700293BD7 /* MMBaseTextFieldItem.m */; };
 		AC38A1D71DB8C5A500293BD7 /* MMUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AC38A1D61DB8C5A500293BD7 /* MMUITextField.m */; };
+		AC43C5251DBEF29500B8E200 /* MFWatermarkCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC43C5241DBEF29500B8E200 /* MFWatermarkCameraViewController.m */; };
 		AC49BE6C1D99FBB900BD24B1 /* MFNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6B1D99FBB900BD24B1 /* MFNetworkRequest.m */; };
 		AC49BE6F1D99FCCA00BD24B1 /* YJOrderListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE6E1D99FCCA00BD24B1 /* YJOrderListApi.m */; };
 		AC49BE721D9A0ACB00BD24B1 /* UIViewController+FixBackIndicatorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49BE701D9A0ACB00BD24B1 /* UIViewController+FixBackIndicatorImage.m */; };
@@ -197,6 +198,8 @@
 		AC38A1D31DB8C53700293BD7 /* MMBaseTextFieldItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBaseTextFieldItem.m; sourceTree = "<group>"; };
 		AC38A1D51DB8C5A500293BD7 /* MMUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUITextField.h; sourceTree = "<group>"; };
 		AC38A1D61DB8C5A500293BD7 /* MMUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUITextField.m; sourceTree = "<group>"; };
+		AC43C5231DBEF29500B8E200 /* MFWatermarkCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFWatermarkCameraViewController.h; sourceTree = "<group>"; };
+		AC43C5241DBEF29500B8E200 /* MFWatermarkCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFWatermarkCameraViewController.m; sourceTree = "<group>"; };
 		AC49BE6A1D99FBB900BD24B1 /* MFNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNetworkRequest.h; sourceTree = "<group>"; };
 		AC49BE6B1D99FBB900BD24B1 /* MFNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNetworkRequest.m; sourceTree = "<group>"; };
 		AC49BE6D1D99FCCA00BD24B1 /* YJOrderListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJOrderListApi.h; sourceTree = "<group>"; };
@@ -493,6 +496,15 @@
 				AC38A1D31DB8C53700293BD7 /* MMBaseTextFieldItem.m */,
 			);
 			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		AC43C5221DBEF27900B8E200 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				AC43C5231DBEF29500B8E200 /* MFWatermarkCameraViewController.h */,
+				AC43C5241DBEF29500B8E200 /* MFWatermarkCameraViewController.m */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		AC49BE761D9A519D00BD24B1 /* SDWebImage */ = {
@@ -798,6 +810,7 @@
 		ACD51B571D8FCCF800814D89 /* MMBase */ = {
 			isa = PBXGroup;
 			children = (
+				AC43C5221DBEF27900B8E200 /* CustomView */,
 				AC137DC91D927E1500075B1A /* BaseClass */,
 				AC4E9F0F1D910F4500F3EEB3 /* MMCategorys */,
 				AC137DC11D92795900075B1A /* YYModel */,
@@ -908,6 +921,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC43C5251DBEF29500B8E200 /* MFWatermarkCameraViewController.m in Sources */,
 				AC49BE9A1D9A519D00BD24B1 /* SDImageCache.m in Sources */,
 				AC49BEB11D9A7A4400BD24B1 /* YJOrderServeListItem.m in Sources */,
 				AC49BEA11D9A519D00BD24B1 /* UIButton+WebCache.m in Sources */,
