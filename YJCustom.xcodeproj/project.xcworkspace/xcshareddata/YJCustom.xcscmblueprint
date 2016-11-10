@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++1343",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++1343" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++1343" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "48ECA85D-F2FA-4FC9-8C8F-46250B41F6B7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++1343" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YJCustom",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YJCustom.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svnserver.naersi.com:8443\/svn\/EEKA",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++1343"
+    }
+  ]
+}

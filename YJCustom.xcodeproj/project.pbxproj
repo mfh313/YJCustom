@@ -123,6 +123,7 @@
 		AC821AC11DB748AD00DD0A11 /* MMSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AC821AC01DB748AD00DD0A11 /* MMSelectButton.m */; };
 		AC821AC81DB75E9200DD0A11 /* MMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC821AC71DB75E9200DD0A11 /* MMSettingViewController.m */; };
 		AC821ACA1DB75EC200DD0A11 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC821AC91DB75EC200DD0A11 /* Setting.storyboard */; };
+		ACA2F8561DD46401008C3841 /* NSDictionary+Unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA2F8551DD46401008C3841 /* NSDictionary+Unicode.m */; };
 		ACD51B391D8FC82A00814D89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD51B381D8FC82A00814D89 /* main.m */; };
 		ACD51B421D8FC82A00814D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD51B401D8FC82A00814D89 /* Main.storyboard */; };
 		ACD51B441D8FC82A00814D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD51B431D8FC82A00814D89 /* Assets.xcassets */; };
@@ -355,6 +356,8 @@
 		AC821AC61DB75E9200DD0A11 /* MMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSettingViewController.h; sourceTree = "<group>"; };
 		AC821AC71DB75E9200DD0A11 /* MMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSettingViewController.m; sourceTree = "<group>"; };
 		AC821AC91DB75EC200DD0A11 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		ACA2F8541DD46401008C3841 /* NSDictionary+Unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Unicode.h"; sourceTree = "<group>"; };
+		ACA2F8551DD46401008C3841 /* NSDictionary+Unicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Unicode.m"; sourceTree = "<group>"; };
 		ACD51B341D8FC82A00814D89 /* YJCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD51B381D8FC82A00814D89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACD51B411D8FC82A00814D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -579,6 +582,8 @@
 				AC49BEAC1D9A67F500BD24B1 /* UIViewController+FullScreen.m */,
 				AC53D29C1D9BA4A70010B9E3 /* UIViewController+UINavigationItem.h */,
 				AC53D29B1D9BA4A70010B9E3 /* UIViewController+UINavigationItem.m */,
+				ACA2F8541DD46401008C3841 /* NSDictionary+Unicode.h */,
+				ACA2F8551DD46401008C3841 /* NSDictionary+Unicode.m */,
 			);
 			path = MMCategorys;
 			sourceTree = "<group>";
@@ -1007,6 +1012,7 @@
 				AC53D29D1D9BA4A70010B9E3 /* UIViewController+UINavigationItem.m in Sources */,
 				AC534F9A1D94D791007B1862 /* YJOrderListItemDetailViewController.m in Sources */,
 				AC4E9F051D91090300F3EEB3 /* YJOrderListAllViewController.m in Sources */,
+				ACA2F8561DD46401008C3841 /* NSDictionary+Unicode.m in Sources */,
 				AC49BE751D9A212400BD24B1 /* YJOrderListDetailApi.m in Sources */,
 				AC137DC71D92795900075B1A /* NSObject+YYModel.m in Sources */,
 				AC49BEAE1D9A67F500BD24B1 /* UIViewController+FullScreen.m in Sources */,
