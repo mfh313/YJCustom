@@ -18,6 +18,7 @@
 @end
 
 @implementation YJAccountLoginControlLogic
+@synthesize contentVC;
 
 -(void)onUserLoginUserName:(NSString *)userName Pwd:(NSString *)password
 {

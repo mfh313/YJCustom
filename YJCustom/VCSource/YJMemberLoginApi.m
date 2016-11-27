@@ -25,7 +25,6 @@
 
 -(NSString *)baseUrl
 {
-    //http://mall.nexy.co/dekora_api/o2o/nexyco/login/memberLogin
     return @"http://mall.nexy.co/dekora_api/o2o/nexyco/login/memberLogin";
 }
     

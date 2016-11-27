@@ -11,4 +11,6 @@
 
 @interface YJAccountLoginControlLogic : NSObject <YJAccountBaseViewControllerDelegate>
 
+@property (nonatomic,weak) YJAccountBaseViewController *contentVC;
+
 @end
