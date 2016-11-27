@@ -12,7 +12,7 @@
 
 -(NSString *)baseUrl
 {
-    return @"http://120.76.242.182/dekora_api/o2o/joylaa/order/getOrderDtl";
+    return @"http://mall.nexy.co/dekora_api/o2o/nexyco/order/getOrderDtl";
 }
 
 - (YTKRequestMethod)requestMethod {

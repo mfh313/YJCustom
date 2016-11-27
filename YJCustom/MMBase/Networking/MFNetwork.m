@@ -79,7 +79,7 @@
 }
 
 //用法1
-//    NSString *loginUrl = @"http://120.76.242.182/dekora_api/o2o/joylaa/login/memberLogin";
+//    NSString *loginUrl = @"http://mall.nexy.co/dekora_api/o2o/nexyco/login/memberLogin";
 //
 //    NSDictionary *parameters = @{@"isCode":@"joylaa",
 //                                 @"userKey":@"joylaa",
@@ -109,7 +109,7 @@
 //    }];
 
 //用法3
-//    NSString *loginUrl = @"http://120.76.242.182/dekora_api/o2o/joylaa/login/memberLogin";
+//    NSString *loginUrl = @"http://mall.nexy.co/dekora_api/o2o/nexyco/login/memberLogin";
 //
 //    NSDictionary *parameters = @{@"isCode":@"joylaa",
 //                                 @"userKey":@"joylaa",

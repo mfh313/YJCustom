@@ -25,7 +25,8 @@
 
 -(NSString *)baseUrl
 {
-    return @"http://120.76.242.182/dekora_api/o2o/joylaa/login/memberLogin";
+    //http://mall.nexy.co/dekora_api/o2o/nexyco/login/memberLogin
+    return @"http://mall.nexy.co/dekora_api/o2o/nexyco/login/memberLogin";
 }
     
 - (YTKRequestMethod)requestMethod {
