@@ -102,6 +102,11 @@
         
         NSMutableArray *allOrderListArray = [NSMutableArray array];
         NSMutableArray *dataArray = response[@"data"];
+        
+        if (![dataArray isKindOfClass:[NSMutableArray class]]) {
+            return;
+        }
+        
         for (int i = 0; i < dataArray.count; i++) {
             YJOrderListDataItem *dataItem = [YJOrderListDataItem MM_modelWithDictionary:dataArray[i]];
             

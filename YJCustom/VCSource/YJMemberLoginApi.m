@@ -34,7 +34,7 @@
 
 - (id)requestArgument {
     return @{
-             @"isCode":@"eeka",
+             @"isCode":@"dekora",
              @"userKey":_username,
              @"userPswd":_password
              };

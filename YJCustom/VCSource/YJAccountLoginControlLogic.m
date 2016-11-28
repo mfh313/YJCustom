@@ -23,7 +23,7 @@
 -(void)onUserLoginUserName:(NSString *)userName Pwd:(NSString *)password
 {
 #ifdef DEBUG
-    userName = @"zxa";
+    userName = @"dekora";
     password = @"111111";
 #else
     
