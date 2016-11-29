@@ -101,9 +101,9 @@
         }
         
         NSMutableArray *allOrderListArray = [NSMutableArray array];
-        NSMutableArray *dataArray = response[@"data"];
+        NSArray *dataArray = response[@"data"];
         
-        if (![dataArray isKindOfClass:[NSMutableArray class]]) {
+        if (![dataArray isKindOfClass:[NSArray class]]) {
             return;
         }
         

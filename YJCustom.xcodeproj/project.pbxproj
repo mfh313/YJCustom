@@ -1160,7 +1160,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eeka.yjcustom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0c9c64cf-8d2d-4ed9-add2-7c4b4100a0d8";
+				PROVISIONING_PROFILE = "fa22538d-87bb-4413-a99c-571a1d9b4227";
 				PROVISIONING_PROFILE_SPECIFIER = "com.eeka.yjcustom开发描述文件";
 			};
 			name = Debug;
